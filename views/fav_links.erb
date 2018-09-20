@@ -3,24 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>This is the about me section</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="">
   </head>
 
   <body>
-    <h1>About Me:</h1>
-    <h2>Skills</h2>
+    <h1>My favourite Links</h1>
     <ul>
-      <% @skills.each do |skill| %>
-        <li> <%= skill %> </li>
-      <% end %>
-    </ul>
-    <h2>Interests</h2>
-    <ul>
-      <% @interests.each do |interest| %>
-        <li> <%= interest %> </li>
+      <% @fav_links.each do |link| %>
+        <li><a href="<%= link %>"> <%= link %> </a></li>
       <% end %>
     </ul>
     <script src="" type="text/javascript" async defer></script>
